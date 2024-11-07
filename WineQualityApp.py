@@ -2,7 +2,8 @@ import pickle
 import pandas as pd
 import streamlit as st
 #upload  the data 
-DataModelleing =pickle.load(open(r'/Users/moussaelrahmoun/Desktop/ML_Project/WineQuality_prediction.sav','rb'))
+DataModelleing = pickle.load(open('WineQuality_prediction.sav', 'rb'))
+
 st.title('wine_qualti')
 st.sidebar.header('feature selection ')
 fixed_acidity = st.number_input("Fixed Acidity")
